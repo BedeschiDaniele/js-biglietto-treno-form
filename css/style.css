@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  background-image: url("https://store-images.s-microsoft.com/image/apps.5738.13929666492019541.2f9dbb54-2217-46dd-8e3e-a81b042e0491.f4c220ca-ad4f-48ef-825f-965fb022d579?mode=scale&q=90&h=1080&w=1920&format=jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+h1 {
+  text-transform: uppercase;
+}
+input {
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 300px;
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid lightgray;
+}
+.container-km, .container-eta, .container-prezzo, .container-name {
+  width: 25%;
+  height: 30%;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  border: 2px solid lightgray;
+}
+.container-name, .container-km {
+  margin-right: 50px;
+}
