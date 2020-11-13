@@ -7,10 +7,19 @@ body {
 }
 h1 {
   text-transform: uppercase;
+  margin-top: 40px;
   margin-bottom: 80px;
 }
 input {
   text-align: center;
+}
+#hidden {
+  opacity: 0;
+  transition: 0.1;
+}
+#show {
+  opacity: 1;
+  transition: 0.1;
 }
 .wrapper {
   width: 80%;
@@ -24,13 +33,13 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 70%;
 }
 .container-km, .container-eta, .container-prezzo, .container-name {
   width: 25%;
-  height: 30%;
+  height: 50%;
   border-radius: 20px;
   text-align: center;
-  padding-top: 20px;
   border: 2px solid lightgray;
 }
 .container-name, .container-km {
@@ -41,11 +50,10 @@ input {
 }
 .container-name-pass, .container-offerta, .container-carrozza, .container-codice, .container-costo {
   width: 20%;
-  height: 30%;
+  height: 50%;
   border-radius: 20px;
   text-align: center;
   margin-right: 10px;
   margin-left: 10px;
-  padding-top: 20px;
   border: 2px solid lightgray;
 }
