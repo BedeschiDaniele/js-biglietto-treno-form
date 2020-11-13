@@ -13,11 +13,11 @@ h1 {
 input {
   text-align: center;
 }
-#hidden {
+.hidden {
   opacity: 0;
   transition: 0.1;
 }
-#show {
+.show {
   opacity: 1;
   transition: 0.1;
 }
@@ -45,9 +45,7 @@ input {
 .container-name, .container-km {
   margin-right: 50px;
 }
-.button {
 
-}
 .container-name-pass, .container-offerta, .container-carrozza, .container-codice, .container-costo {
   width: 20%;
   height: 50%;

@@ -33,10 +33,20 @@ generaBottone.addEventListener("click",
    document.getElementById("costo").innerHTML += prezzoBiglietto.toFixed(2);
 
    var biglietto = document.getElementById("ticket");
-   biglietto.classList.remove("hiddeen");
-   biglietto.classList.remove("hiddeen");
+   biglietto.classList.remove("hidden");
+   biglietto.classList.add("show");
  }
 );
+
+ var bottoneannulla = document.getElementById("annulla");
+ bottoneannulla.addEventListener("click",
+    function() {
+      var biglietto = document.getElementById("ticket");
+      biglietto.classList.remove("show");
+      biglietto.classList.add("hidden");
+    }
+ );
+
 // Controllo valore inserito
 // if (isNaN(km)) {
 //   alert("Hai inserito un valore sbagliato");
@@ -45,9 +55,3 @@ generaBottone.addEventListener("click",
 //   alert("Hai inserito un valore sbagliato");
 //   km = 0;
 // }
-
-
-// Prezzo finale del biglietto
-document.getElementById('km').innerHTML=km;
-document.getElementById('eta').innerHTML=eta;
-document.getElementById('prezzo').innerHTML=prezzoBiglietto.toFixed(2);
